@@ -1,6 +1,6 @@
 # Vuejs And Face Api Attendance Tracking
 
-
+Modified Script from  https://github.com/anandmt/ats_Vuejs 
 
 modifications :
             1 - Upon registration the photo is taken from the device camera instead of (image URL)
