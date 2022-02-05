@@ -7,7 +7,7 @@ modifications :
             2 - More attendance data added (Current Timestamp and email address (binded in the html) )
             3 - Removed faceExpressionNet from the JavaScript because it is useless in our solution
             4 - small Css changes
-            5 - My own backend  server   
+            5 - My own backend server   
 
 ATS web is a Vuejs Progressive web application, which work on any machine which is having camera inbuilt including mobile devices, it is powered with TensorflowJs Face identification library trained by  for face tracking and Azure API for accuret Face matching.
 
@@ -55,6 +55,7 @@ And of course ATS itself is an open source [ats](https://github.com/anandmt/ats_
   {
     "id": "5e830aa31c9d440000b91e06",
     "name": "Anand Tiwari",
+    "email": "email@email.com", 
     "image": "https://res.cloudinary.com/dq3npvyjj/image/upload/v1585571840/anand_lnkdn_yzmu5g.jpg",
     "entry": "",
     "exit": "",
