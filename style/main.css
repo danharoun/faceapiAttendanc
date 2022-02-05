@@ -1,0 +1,25 @@
+body {
+  background-color:black;
+}
+.border-3 {
+  border-width:4px !important;
+}
+
+#videoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.positionAbsolute {
+  position: absolute!important;
+  right: 4px;
+}
+
+canvas {
+    position: absolute;
+}
+
+video {
+    opacity: 1;
+    object-fit: contain;
+}
