@@ -1,0 +1,74 @@
+body{
+  margin:0;
+  /* overflow:hidden; */
+
+  background-color: #12194d;
+}
+#intro{
+  position:absolute;
+  top:10px;
+  left:10px;
+  width:20px;
+  height:20px;
+
+}
+#layer{
+  display: block;
+  width: 1920px;
+  height: 1080px;
+  cursor:none !important;
+}
+ canvas {
+  background: #12194d;
+  color: white;
+
+}
+
+.canvas-holder {
+  display: block;
+    width: 1920PX;
+  height: 765PX ;
+  cursor:none !important;
+}
+
+.phone {
+  float: left;
+}
+
+.tablet {
+  float: left;
+}
+
+.small-desktop {
+  /* float: left; */
+  text-align: center;
+}
+
+.large-desktop {
+  float: left;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .phone {
+    float: none;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tablet {
+    float: none;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  .small-desktop {
+    float: none;
+  }
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1601px) {
+  .large-desktop {
+    float: none;
+  }
+}

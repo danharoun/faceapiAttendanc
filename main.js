@@ -1,12 +1,10 @@
-
-
 const video = document.getElementById("video");
 //const labeled = {};
 const labeled = {
-  "Sundar Raman": [
-    "https://media-exp1.licdn.com/dms/image/C4D03AQFJvQHUUnloiQ/profile-displayphoto-shrink_200_200/0/1542029964239?e=1649289600&v=beta&t=_T4Rb9OE0MBGJO0BCqJMDrOC0bH-AH8c8YtGkW1KS-8",
-  ],
   "Adnan Haroun": [
+    "https://res.cloudinary.com/dq3npvyjj/image/upload/v1585571840/anand_lnkdn_yzmu5g.jpg",
+  ],
+  "moe test": [
     "https://res.cloudinary.com/dq3npvyjj/image/upload/v1585813139/Rikhil_jfr93h.jpg",
   ],
 
@@ -85,15 +83,34 @@ async function start() {
   markAttendance.__vue__.start = "Attend";
 
   setInterval(async () => {
+    // document.getElementById('ballsframe').contentWindow.active();
+    // window.frames[0].frameElement.contentWindow.active();
 
     const detections = await faceapi
       .detectAllFaces(video)
       .withFaceLandmarks()
+      .withFaceExpressions()
       .withFaceDescriptors();
     const resizedDetections = faceapi.resizeResults(detections, displaySize);
     const results = resizedDetections.map((d) =>
       faceMatcher.findBestMatch(d.descriptor)
     );
+    // console.log();
+    ballSrc = "neutral.png";
+    if(resizedDetections[0].expressions.happy  >= 0.7 ){
+      ballSrc = 'happy.png';
+    }else if (resizedDetections[0].expressions.angry  >= 0.6) {
+      ballSrc = 'angry.png';
+    }else if (resizedDetections[0].expressions.sad  >= 0.6) {
+      ballSrc = 'sad.png';
+
+    }else {
+      ballSrc = 'neutral.png';
+
+    }
+
+    window.frames[0].frameElement.contentWindow.changeBall(ballSrc);
+    window.frames[0].frameElement.contentWindow.active();
 
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
 
