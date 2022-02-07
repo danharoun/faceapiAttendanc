@@ -2,6 +2,10 @@
 
 Modified Script from  https://github.com/anandmt/ats_Vuejs 
 
+
+
+UPDATE [07/02/2022] -- interactive background added (falling emoji's with collision based on RealTime human face expressions)
+
 modifications :
             1 - Upon registration the photo is taken from the device camera instead of (image URL)
             2 - More attendance data added (Current Timestamp and email address (binded in the html) )
@@ -31,7 +35,8 @@ ATS uses a number of open source projects:
 
 faceRecognition Attendance System
 
-  Modified Script from  https://github.com/anandmt/ats_Vuejs
+ * Modified Script from  https://github.com/anandmt/ats_Vuejs
+* https://codepen.io/asha23/pen/NWoZVL  falling balls  
 * [vuejs](https://vuejs.org/) - The Progressive JavaScript Framework
 * [TensorflowJs- face-api.js](https://itnext.io/face-api-js-javascript-api-for-face-recognition-in-the-browser-with-tensorflow-js-bcc2a6c4cf07) - For face tracking and matching!
 * [bootstrap Design](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - An awesome and the world’s most popular framework for building responsive, mobile-first sites.
