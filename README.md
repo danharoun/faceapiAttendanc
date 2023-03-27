@@ -3,30 +3,20 @@
 Modified Script from  https://github.com/anandmt/ats_Vuejs 
 
 
+# modifications :
 
-UPDATE [07/02/2022] -- interactive background added (falling emoji's with collision based on RealTime human face expressions)
-
-modifications :
-            1 - Upon registration the photo is taken from the device camera instead of (image URL)
-            2 - More attendance data added (Current Timestamp and email address (binded in the html) )
-            3 - Removed faceExpressionNet from the JavaScript because it is useless in our solution
-            4 - small Css changes
-            5 - My own backend server   
+*           1 -falling emoji's balls with collision physics based on webcam  human face expressions
+*           2 - More attendance data added (Current Timestamp and email address (binded in the html) )
+*           3 - Upon registration the photo is taken from the device camera instead of (image URL)
+*           4 - small Css changes
+*           5 - My own backend server   
 
 ATS web is a Vuejs Progressive web application, which work on any machine which is having camera inbuilt including mobile devices, it is powered with TensorflowJs Face identification library trained by  for face tracking and Azure API for accuret Face matching.
 
 
 # Features!
 
-  - press attend and the vuejs will take a picture from the camera and it will get trained automatically for face match with name.
-  - It Tracks and Identifies face.
-  - On each encounter it changes status from Entry to Exit and vice versa.
-
-
-You can also:
-  - Deploy this web app on Linux server.
-  - In a Doker container
-  - Even on github pages as anandmt have did : [atsweb](https://anandmt.github.io/)
+ 
 
 
 ### Tech
@@ -36,9 +26,9 @@ ATS uses a number of open source projects:
 faceRecognition Attendance System
 
  * Modified Script from  https://github.com/anandmt/ats_Vuejs
-* https://codepen.io/asha23/pen/NWoZVL  falling balls  
+* https://codepen.io/asha23/pen/NWoZVL  falling balls physics animation 
 * [vuejs](https://vuejs.org/) - The Progressive JavaScript Framework
-* [TensorflowJs- face-api.js](https://itnext.io/face-api-js-javascript-api-for-face-recognition-in-the-browser-with-tensorflow-js-bcc2a6c4cf07) - For face tracking and matching!
+* [TensorflowJs- face-api.js](https://itnext.io/face-api-js-javascript-api-for-face-recognition-in-the-browser-with-tensorflow-js-bcc2a6c4cf07) - For face tracking and matching! and emoji based animations
 * [bootstrap Design](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - An awesome and the world’s most popular framework for building responsive, mobile-first sites.
 * [Animate.js](https://daneden.github.io/animate.css/) - For animation's, must have library!
 * [SweetAlert.js](https://lipis.github.io/bootstrap-sweetalert/) - SweetAlert for Bootstrap a beautiful replacement for JavaScript's "alert"
