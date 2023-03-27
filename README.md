@@ -8,7 +8,7 @@ Modified Script from  https://github.com/anandmt/ats_Vuejs
 *           1 -falling emoji's balls with collision physics based on webcam  human face expressions
 *           2 - More attendance data added (Current Timestamp and email address (binded in the html) )
 *           3 - Upon registration the photo is taken from the device camera instead of (image URL)
-*           4 - small Css changes
+*           4 - strapi
 *           5 - My own backend server   
 
 ATS web is a Vuejs Progressive web application, which work on any machine which is having camera inbuilt including mobile devices, it is powered with TensorflowJs Face identification library trained by  for face tracking and Azure API for accuret Face matching.
